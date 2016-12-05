@@ -28,7 +28,9 @@ to store its value in a variable in advance. For example is_cold_colour = 'green
 
 However there is a method that make it possible to remove an item in the list and use that afterwards, and that is by using a method
 called pop(). For example last_colour = colours.pop() will remove the last item in the colours list and keep it last_colour.
-After apply colours.pop(), colours = ["black", "red", "yellow", "orange"] and print(last_colour) will print 'purple'. To pop an item from a certain index position, we can use the index of that position, for example, first_colour = colours.pop(0) will pop the first item. colours = ["red", "yellow", "orange"] and print(first_colour) will print 'black'.  
+After apply colours.pop(), colours = ["black", "red", "yellow", "orange"] and print(last_colour) will print 'purple'. 
+To pop an item from a certain index position, we can use the index of that position, for example, first_colour = colours.pop(0) 
+will pop the first item. colours = ["red", "yellow", "orange"] and print(first_colour) will print 'black'.  
 
 To sort the items in a list temporarily and only for display purpose, we can use the sorted() method, so for
 colours = ["red", "yellow", "orange"], sorted_colours = collours.sorted() will be ["orange", "red", "yellow"], but colours will stay
