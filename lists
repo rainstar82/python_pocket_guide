@@ -1,0 +1,24 @@
+I love lists because I can just collect stuff I like that in the order that is important for me. I can also easily add to the list, replace items and sort them. Lists can start from nothing and grow, which is good to collect bunch of things if order they are collected is important. 
+
+I put my lists items in square brackets and separate them with commas. For example: colours = ["red", "yellow", "green", "blue"]. 
+
+Each item in my list has a position, remembering that in the list order is important. In my colours list, red is in position index 0. So colours[0] returns 'red'. However to get my last item easily, I can use index -1. So colours[-1] returns "blue". And this can go one, such as colours[-2] returns 'green' and so on.
+To know the length of the list, len(colours) for example for colours = ["red", "yellow", "green", "blue"], will give 4.
+
+It is easy to change an item in the list, for example by colours[-1] = 'orange' the list will change to colours = ["red", "yellow", "green", "orange"]
+ 
+It is also possible to add an item to the list. This will add the item to the end of the list. For example colours.append('purple') will change the colours to colours = ["red", "yellow", "green", "orange", "purple"].
+ 
+To inset an item to a certain position in the list, colours.insert(0, 'black') adds that to the index position 0 and shifts everything after that one position forward. colours = ["black", "red", "yellow", "green", "orange", "purple"].
+ 
+Finally to remove an item from a certain position in the list, del colours[3] will remove the item at index position 3 and shift all the other items after to a lower position.  colours = ["black", "red", "yellow", "orange", "purple"]. 
+It is also possible to remove the first occurrence of an item from the list by using its value, for example in the above instead of using del colours[3], we could use colours.remove('green'), but we had another green appearing later in the list, that won't be removed.
+It is important to know that once an item is deleted, it is deleted forever and there is no undo. So if we need to use it after, we need to store its value in a variable in advance. For example is_cold_colour = 'green' 
+
+However there is a method that make it possible to remove an item in the list and use that afterwards, and that is by using a method called pop(). For example last_colour = colours.pop() will remove the last item in the colours list and keep it last_colour. After apply colours.pop(), colours = ["black", "red", "yellow", "orange"] and print(last_colour) will print 'purple'. To pop an item from a certain index position, we can use the index of that position, for example, first_colour = colours.pop(0) will pop the first item. colours = ["red", "yellow", "orange"] and print(first_colour) will print 'black'.  
+
+To sort the items in a list temporarily and only for display purpose, we can use the sorted() method, so for colours = ["red", "yellow", "orange"], sorted_colours = collours.sorted() will be ["orange", "red", "yellow"], but colours will stay as it is. We can also use sorted_colours_reversed = colours.sorted(reversed = True) to get ["yellow", "red", "orange"]. 
+
+To sort the items in a list permanently, we can use sort() method. For example colours.sort() will give  colours = ["orange", "red", "yellow"]. Or we can alternatively, sort in reverse order by using colours.sort(reverse=True) will give colours = ["yellow", "red", "orange"]. 
+ 
+ And if we want to reverse the appearance of the items in the list, we can use colour.reverse() method. So for example colours = ["red", "yellow", "green", "blue"] will become colours.reverse() = ["blue", "green", "yellow", "red"]. Reversing the reverse, will change the list back.
